@@ -20,6 +20,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder|FormDefinition whereTitle($value)
  * @method static Builder|FormDefinition whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\FormDefinition newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\FormDefinition newQuery()
  */
 class FormDefinition extends Model
 {
@@ -42,7 +44,6 @@ class FormDefinition extends Model
                 "priority" => $section->priority
             ]);
         }
-
         return $json;
     }
 }

@@ -29,4 +29,37 @@ use Illuminate\Database\Eloquent\Model;
 class Criterion extends Model
 {
     //
+    protected $fillable = [
+        "criterion_definition_id",
+        "section_id",
+        "score",
+        "note"
+    ];
+
+    public static function createCriteria(SectionDefinition $sd, Section $section) {
+        $cs = CriterionDefinition::whereSectionDefinitionId($sd->id)->get();
+
+        $a = array();
+
+        foreach ($cs as $c) {
+            $cr = Criterion::create([
+                "section_id" => $section->id,
+                "criterion_definition_id" => $c->id,
+                "score" => 0,
+                "note" => ""
+            ]);
+
+            $a[] = [
+                "id" => $cr->id,
+                "section_id" => $section->id,
+                "title" => $c->title,
+                "criterion_definition_id" => $c->id,
+                "score" => null,
+                "score_max" => $c->score_max,
+                "note" => null
+            ];
+        }
+
+        return $a;
+    }
 }

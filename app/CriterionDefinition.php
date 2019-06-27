@@ -22,6 +22,12 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder|CriterionDefinition whereSectionDefinitionId($value)
  * @method static Builder|CriterionDefinition whereTitle($value)
  * @method static Builder|CriterionDefinition whereUpatedAt($value)
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int|null $priority
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CriterionDefinition newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CriterionDefinition newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CriterionDefinition wherePriority($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CriterionDefinition whereUpdatedAt($value)
  */
 class CriterionDefinition extends Model
 {
@@ -35,4 +41,6 @@ class CriterionDefinition extends Model
         "updated_at",
         "deleted_at"
     ];
+
+
 }

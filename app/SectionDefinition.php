@@ -22,6 +22,10 @@ use Illuminate\Database\Eloquent\Model;
  * @method static Builder|SectionDefinition whereId($value)
  * @method static Builder|SectionDefinition whereTitle($value)
  * @method static Builder|SectionDefinition whereUpdatedAt($value)
+ * @property int|null $priority
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\SectionDefinition newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\SectionDefinition newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\SectionDefinition wherePriority($value)
  */
 class SectionDefinition extends Model
 {
@@ -35,6 +39,6 @@ class SectionDefinition extends Model
     ];
 
     public function retrieveCriteria() {
-        return $this->hasMany('App\CriterionDefinition')->orderBy('priority')->get();
+        return $this->hasMany('\App\CriterionDefinition')->get();
     }
 }

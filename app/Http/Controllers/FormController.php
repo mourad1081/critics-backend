@@ -48,6 +48,9 @@ class FormController extends Controller
             $new_section = null;
         }
 
-        return ["response" => "OK"];
+        return [
+            "success" => true,
+            "newForm" => $this->get($form->id)
+        ];
     }
 }

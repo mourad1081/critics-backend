@@ -12,14 +12,15 @@
 */
 
 Route::group(['prefix' => 'api', 'middleware' => 'cors'], function() {
-    // Form definition
+    // Review definition
     Route::get('form-definitions/{id}', 'FormController@get');
     Route::patch('form-definitions/', 'FormController@patch');
 
     // Review
     Route::get('reviews/{id_form}/new', 'ReviewController@new');
     Route::get('reviews/{id_review}', 'ReviewController@get');
-    Route::put('reviews', 'ReviewController@put');
+    Route::get('reviews', 'ReviewController@getAll');
+    Route::post('reviews', 'ReviewController@save');
     Route::patch('reviews/{id_review}', function() {});
 });
 
@@ -30,4 +31,4 @@ Route::group(['prefix' => 'api', 'middleware' => 'cors'], function() {
 // Route::get('/home', 'HomeController@index')->name('home');
 
 
-// Auth::routes();
+Auth::routes();

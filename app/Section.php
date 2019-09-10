@@ -25,6 +25,6 @@ use Illuminate\Database\Eloquent\Model;
 class Section extends Model
 {
     protected $fillable = [
-        "id", "average", "created_at", "updated_at", "section_definition_id"
+        "id", "average", "created_at", "updated_at", "section_definition_id", "review_id"
     ];
 }

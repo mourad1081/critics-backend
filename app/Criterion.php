@@ -33,25 +33,19 @@ class Criterion extends Model
         "criterion_definition_id",
         "section_id",
         "score",
-        "note"
+        "note",
+        "created_at",
+        "updated_at"
     ];
 
-    public static function createCriteria(SectionDefinition $sd, Section $section) {
-        $cs = CriterionDefinition::whereSectionDefinitionId($sd->id)->get();
+    public static function createCriteria(SectionDefinition $sd) {
+        $cs = CriterionDefinition::whereSectionDefinitionId($sd->id)->orderBy('priority')->get();
 
         $a = array();
 
         foreach ($cs as $c) {
-            $cr = Criterion::create([
-                "section_id" => $section->id,
-                "criterion_definition_id" => $c->id,
-                "score" => 0,
-                "note" => ""
-            ]);
 
             $a[] = [
-                "id" => $cr->id,
-                "section_id" => $section->id,
                 "title" => $c->title,
                 "criterion_definition_id" => $c->id,
                 "score" => null,

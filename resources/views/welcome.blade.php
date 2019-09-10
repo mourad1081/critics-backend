@@ -8,6 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
         <!-- Styles -->
         <style>
@@ -48,7 +50,8 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            .links a {
+                display: inline-block;
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -57,7 +60,9 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
-
+            .links > p {
+                display: inline-block;
+            }
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -68,7 +73,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <strong style="display: inline-block;margin-right: 15px;">{{ Auth::user()->name }}</strong>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -80,17 +85,34 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="title m-b-md mb-2">
+                    <img src="{{ asset('img/logo.png') }}" alt="Logo">
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="links row mt-4">
+                    <a href="{{ url('/home') }}" class="col-6 col-sm-2 mt-2">
+                        <i style="color: #15adaa" class="fa fa-utensils fa-3x mb-2"></i><br>
+                        <p>Restaurant</p>
+                    </a>
+                    <a href="#" class="col-6 col-sm-2 mt-2">
+                        <i class="fa fa-hotel fa-3x mb-2"></i><br>
+                        <p>Hôtel</p>
+                    </a>
+                    <a href="#" class="col-6 col-sm-2 mt-2">
+                        <i class="fa fa-store fa-3x mb-2"></i><br>
+                        <p>Retail</p>
+                    </a>
+                    <a href="#" class="col-6 col-sm-2 mt-2">
+                        <i class="fa fa-hospital fa-3x mb-2"></i><br>
+                        <p>Healthcare</p>
+                    </a>
+                    <a href="#" class="col-6 col-sm-2 mt-2">
+                        <i class="fa fa-car fa-3x pb-2 mb-2"></i><br>
+                        <p>Automotive</p>
+                    </a>
+                    <a href="#" class="col-6 col-sm-2 mt-2">
+                        <i class="fas fa-futbol fa-3x pb-2"></i><br>
+                        <p>Club de sport & golf</p>
+                    </a>
                 </div>
             </div>
         </div>

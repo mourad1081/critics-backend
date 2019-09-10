@@ -28,25 +28,20 @@ class Review extends Model
         "form_definition_id",
         "state",
         "created_at",
+        "picture",
         "updated_at"
     ];
 
-
-    public static function createSections(FormDefinition $fd, Review $review)
+    public static function createSections(FormDefinition $fd)
     {
         $sections = SectionDefinition::whereFormDefinitionId($fd->id)->orderBy('priority')->get();
         $s = array();
         foreach ($sections as $sd) {
-            $section = Section::create([
-                "review_id" => $review->id,
-            ]);
             $s[] = [
-                "id" => $section->id,
-                "review_id" => $review->id,
                 "title" => $sd->title,
                 "average" => 0,
                 "section_definition_id" => $sd->id,
-                "criteria" => Criterion::createCriteria($sd, $section)
+                "criteria" => Criterion::createCriteria($sd)
             ];
         }
 

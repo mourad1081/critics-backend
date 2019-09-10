@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Review;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $review_states = [
+            "pending" => Review::whereState(0)->count(),
+            "finished" => Review::whereState(1)->count()
+        ];
+
+        $reviews = Review::orderByDesc('created_at')
+                         ->take(10)
+                         ->get();
+
+        return view('home', [
+            'reviews' => $reviews,
+            'review_states' => $review_states
+        ]);
     }
 }

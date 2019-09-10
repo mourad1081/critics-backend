@@ -1,0 +1,49 @@
+#menu-mobile {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  border-top: solid #EEE 2px;
+  text-align: center;
+  z-index: 10;
+  background-color: #eeeeee; }
+  #menu-mobile p {
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    margin: 0; }
+
+#menu-desktop {
+  margin-top: 20px;
+  border-right: solid #EEE 2px;
+  height: 80vh; }
+  #menu-desktop nav > p {
+    border-bottom: solid #EEE 1px;
+    cursor: pointer;
+    transition: all .3s ease-out; }
+    #menu-desktop nav > p:hover {
+      margin-left: 15px; }
+
+.bg-warning-alt {
+  background-color: goldenrod; }
+
+.bg-success-alt {
+  background-color: #9fcd9f; }
+
+#add-review {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  z-index: 12;
+  box-shadow: 0 5px 10px 0px #969494; }
+  #add-review i {
+    color: white;
+    line-height: 42px;
+    font-size: 1.2rem; }
+
+/*# sourceMappingURL=style.css.map */

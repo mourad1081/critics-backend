@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d2957fb-5e4a-424e-a4c5-d632dc1a0cea" name="Default" comment="">
+    <list default="true" id="6d2957fb-5e4a-424e-a4c5-d632dc1a0cea" name="Default" comment="lol">
       <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -272,7 +272,7 @@
       <workItem from="1568195907973" duration="4039000" />
       <workItem from="1569741608330" duration="15000" />
       <workItem from="1569741643852" duration="1834000" />
-      <workItem from="1570868534599" duration="8529000" />
+      <workItem from="1570868534599" duration="8772000" />
     </task>
     <servers />
   </component>
@@ -294,5 +294,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="lol" />
   </component>
 </project>

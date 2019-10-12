@@ -11,6 +11,9 @@
 |
 */
 
+Route::view('/{path?}', 'app');
+
+
 Route::group(['prefix' => 'api', 'middleware' => 'auth'], function() {
     // Review definition
     Route::get('form-definitions/{id}', 'FormController@get');
@@ -19,7 +22,7 @@ Route::group(['prefix' => 'api', 'middleware' => 'auth'], function() {
     Route::get('reviews/{id_form}/new', 'ReviewController@new')->name('new_review');
     Route::get('reviews/{id_review}', 'ReviewController@index')->name('review');
     Route::get('reviews', 'ReviewController@getAll');
-    Route::post('reviews', 'ReviewController@save')->name('save-review');
+    Route::post('reviews/{id_form}', 'ReviewController@save')->name('save-review');
     Route::get('reviews/{id_review}/delete', 'ReviewController@delete')->name('delete_review');
     Route::get('reviews/{id_review}/generate', 'ReviewController@generate')->name('generate_review');
 });
@@ -28,7 +31,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{type_review}/home', 'HomeController@index')->name('home');
 
 
 Auth::routes();

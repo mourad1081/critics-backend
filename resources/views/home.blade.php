@@ -6,6 +6,9 @@
     </div>
     <div class="container-fluid" style="margin-bottom: 100px;">
         <div class="row">
+            <div class="col-12 my-2">
+                <h4><i class="fa fa-tachometer-alt"></i> Dashboard - {{ $type_review }}</h4>
+            </div>
             <div class="col-12 col-sm-6">
                 <div class="card">
                     <div class="card-body text-center">

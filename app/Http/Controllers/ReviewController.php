@@ -12,7 +12,9 @@ use App\ViewReview;
 use App\ViewReviewCriterion;
 use App\ViewSection;
 use Auth;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\UploadedFile;
+use Illuminate\View\View;
 use PhpOffice\PhpWord\Exception\Exception;
 use Request;
 
@@ -21,9 +23,20 @@ class ReviewController extends Controller
 {
 
     public function index(int $id) {
+        $slugs = [null, 'restaurant', 'hostel'];
+
+        $review = Review::whereId($id)->first();
+
+        if (!$review) {
+            abort(404);
+        }
+
+        $type_review = $review->form_definition_id;
         $r = $this->getReview($id);
 
         return view('review', [
+            'slug' => $slugs[$type_review],
+            'id_type_review' => $type_review,
             'review' => $r
         ]);
     }
@@ -34,10 +47,15 @@ class ReviewController extends Controller
 
     /**
      * @param int $id_form
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return Factory|View
      */
     public function new(int $id_form) {
+        $slugs = [null, 'restaurant', 'hostel'];
         $fd = FormDefinition::where('id', $id_form)->first();
+
+        if (!$fd) {
+            abort(404);
+        }
 
         $review = [
             "title" => $fd->title,
@@ -46,8 +64,11 @@ class ReviewController extends Controller
         ];
 
         return view('new-review', [
+            'slug' => $slugs[$id_form],
+            'id_type_review' => $id_form,
             'review' => $review
         ]);
+
     }
 
 
@@ -67,17 +88,23 @@ class ReviewController extends Controller
 
     /**
      * Saves a review
+     * @param int $id_form
      * @return array
      */
-    public function save() {
+    public function save(int $id_form) {
+        $id_author = 1;
+        if (Auth::user()) {
+            $id_author = Auth::user()->id;
+        }
 
         $review_created = Review::create([
-            'form_definition_id' => 1,
-            'user_id' => Auth::user()->id,
+            'form_definition_id' => $id_form,
+            'user_id' => $id_author,
             'state' => 0
         ]);
 
         $picture = Request::file('picture');
+
         if (Request::hasFile('picture')) {
             $name = 'cover' . '.' . $picture->extension();
             $picture->move(public_path() . '/upload/'. $review_created->id . '/', $name);

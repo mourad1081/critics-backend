@@ -89,12 +89,12 @@
                     <img src="{{ asset('img/logo.png') }}" alt="Logo">
                 </div>
                 <div class="links row mt-4">
-                    <a href="{{ url('/home') }}" class="col-6 col-sm-2 mt-2">
+                    <a href="{{ url('/restaurant/home') }}" class="col-6 col-sm-2 mt-2">
                         <i style="color: #15adaa" class="fa fa-utensils fa-3x mb-2"></i><br>
                         <p>Restaurant</p>
                     </a>
-                    <a href="#" class="col-6 col-sm-2 mt-2">
-                        <i class="fa fa-hotel fa-3x mb-2"></i><br>
+                    <a href="{{ url('/hostel/home') }}" class="col-6 col-sm-2 mt-2">
+                        <i style="color: #15adaa" class="fa fa-hotel fa-3x mb-2"></i><br>
                         <p>Hôtel</p>
                     </a>
                     <a href="#" class="col-6 col-sm-2 mt-2">

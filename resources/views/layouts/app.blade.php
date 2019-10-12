@@ -58,8 +58,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -78,12 +77,11 @@
 
         <main class="container-fluid">
             <div class="row">
-
                 @auth
                     <!-- Menu mobile -->
                         <section id="menu-mobile" class="d-block d-md-none">
                             <div>
-                                <p><a style="display: inline-block;" href="{{ url('/home') }}"><i class="fa fa-home"></i><br>Home</a></p>
+                                <p><a style="display: inline-block;" href="{{ url("/$slug/home") }}"><i class="fa fa-home"></i><br>Home</a></p>
                                 <p><i class="fas fa-file-contract"></i><br>Reviews</p>
                                 <p><i class="fa fa-user"></i><br>Users</p>
                                 <p><i class="fa fa-cogs"></i><br>Manage</p>
@@ -93,13 +91,13 @@
                 <section id="menu-desktop" class="d-none d-md-block col-md-2 p-4">
                     <p class="text-center text-uppercase font-weight-bold pb-2">Menu</p>
                     <nav>
-                        <p class="py-2"><a href="{{ url('/home') }}"><i style="width: 24px;" class="fa fa-home"></i> Home</a></p>
+                        <p class="py-2"><a href="{{ url("/$slug/home") }}"><i style="width: 24px;" class="fa fa-home"></i> Home</a></p>
                         <p class="py-2"><i style="width: 24px;" class="fas fa-file-contract"></i> Reviews</p>
                         <p class="py-2"><i style="width: 24px;" class="fa fa-user"></i> Users</p>
                         <p class="py-2"><i style="width: 24px;" class="fa fa-cogs"></i> Manage forms</p>
                     </nav>
                     <p class="text-center">
-                        <a href="{{ route('new_review', 1) }}" class="btn btn-primary text-uppercase">
+                        <a href="{{ route('new_review', $id_type_review) }}" class="btn btn-primary text-uppercase">
                             <i class="fa fa-plus"></i> New review
                         </a>
                     </p>

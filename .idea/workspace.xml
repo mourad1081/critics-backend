@@ -2,52 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d2957fb-5e4a-424e-a4c5-d632dc1a0cea" name="Default" comment="lol">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Example.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mock-new-review.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/classes/Review.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/classes/tests/Review.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/classes/tests/mocks/mock-new-review.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Criterion.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/NewReview.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Review.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Section.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/globals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/criterion.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/critics-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/critics-backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_metadata_/metadata_i.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/_src_/schema/critics.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage_v2/_src_/schema/critics.f1aPPQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage_v2/_src_/schema/critics.f1aPPQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage_v2/_src_/schema/cybhelp.7RsZSQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage_v2/_src_/schema/journal_intime.elcKFg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage_v2/_src_/schema/mybb.7F4zAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5077d67f-39ce-42b3-a94f-81bd65e831da/storage_v2/_src_/schema/template.esw6sQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Criterion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Criterion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/new-review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/new-review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +65,19 @@
         <item name="critics@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="critics@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="critics: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="critics@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="critics: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -90,11 +86,18 @@
       <list>
         <option value="SCSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -191,7 +194,11 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1QeqnFWIAPET3iFzBwAWSRdvyAW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -202,11 +209,17 @@
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/classes/tests/mocks" />
+      <recent name="$PROJECT_DIR$/resources/js/classes/tests" />
+      <recent name="$PROJECT_DIR$/resources/js/classes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\critics-backend\public\img" />
     </key>
@@ -223,11 +236,88 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.Behavior of the review class is not buggy. (1)">
+    <configuration name="Behavior of the review class is not buggy. (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/resources/js/classes/tests/Review.spec.js" />
+      <test-names>
+        <test-name value="Behavior of the review class is not buggy." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Behavior of the review class is not buggy." type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/resources/js/classes/tests/Review.specs.js" />
+      <test-names>
+        <test-name value="Behavior of the review class is not buggy." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Behavior of the review class is not buggy..It should give the correct section." type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/resources/js/classes/tests/Review.spec.js" />
+      <test-names>
+        <test-name value="Behavior of the review class is not buggy." />
+        <test-name value="It should give the correct section." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Behavior of the review class is not buggy..should give the correct section." type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/resources/js/classes/tests/Review.spec.js" />
+      <test-names>
+        <test-name value="Behavior of the review class is not buggy." />
+        <test-name value="should give the correct section." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Behavior of the review class is not buggy.should give the correct section" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/resources/js/classes/tests/Review.specs.js" />
+      <test-names>
+        <test-name value="Behavior of the review class is not buggy" />
+        <test-name value="should give the correct section" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Behavior of the review class is not buggy. (1)" />
+        <item itemvalue="Jest.Behavior of the review class is not buggy..should give the correct section." />
+        <item itemvalue="Jest.Behavior of the review class is not buggy..It should give the correct section." />
+        <item itemvalue="Jest.Behavior of the review class is not buggy." />
+        <item itemvalue="Jest.Behavior of the review class is not buggy.should give the correct section" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -273,6 +363,11 @@
       <workItem from="1569741608330" duration="15000" />
       <workItem from="1569741643852" duration="1834000" />
       <workItem from="1570868534599" duration="8772000" />
+      <workItem from="1572169816287" duration="28150000" />
+      <workItem from="1572283870912" duration="5875000" />
+      <workItem from="1572297454132" duration="4105000" />
+      <workItem from="1572590168683" duration="14215000" />
+      <workItem from="1572689498349" duration="4151000" />
     </task>
     <servers />
   </component>
@@ -296,7 +391,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="lol" />
     <option name="LAST_COMMIT_MESSAGE" value="lol" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/critics_backend$Behavior_of_the_review_class_is_not_buggy_.info" NAME="Behavior of the review class is not buggy. Coverage Results" MODIFIED="1572593732532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

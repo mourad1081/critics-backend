@@ -28,7 +28,6 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Criterion extends Model
 {
-    //
     protected $fillable = [
         "criterion_definition_id",
         "section_id",
@@ -49,6 +48,7 @@ class Criterion extends Model
                 "title" => $c->title,
                 "criterion_definition_id" => $c->id,
                 "score" => null,
+                "priority" => $c->priority,
                 "score_max" => $c->score_max,
                 "note" => null
             ];

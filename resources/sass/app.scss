@@ -1,14 +1,31 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
-@import 'variables';
-
-// Bootstrap
+@import "variables";
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+
+#app-header {
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: grey 0 5px 15px -10px;
+    position: fixed;
+    padding-left: 0;
+    z-index: 1;
+    width: 100%;
+
+    #accomplishment {
+        height: 5px;
+        background-color: #c1c1c1;
+        position: relative;
+
+        #accomplishment-value {
+            position: absolute;
+            height: 5px;
+            width: 33%;
+            background-color: #949c62;
+        }
+    }
 }

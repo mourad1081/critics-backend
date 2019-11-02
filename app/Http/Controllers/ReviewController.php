@@ -34,7 +34,7 @@ class ReviewController extends Controller
         $type_review = $review->form_definition_id;
         $r = $this->getReview($id);
 
-        return view('review', [
+        return json_encode([
             'slug' => $slugs[$type_review],
             'id_type_review' => $type_review,
             'review' => $r
@@ -47,7 +47,7 @@ class ReviewController extends Controller
 
     /**
      * @param int $id_form
-     * @return Factory|View
+     * @return array
      */
     public function new(int $id_form) {
         $slugs = [null, 'restaurant', 'hostel'];
@@ -62,13 +62,13 @@ class ReviewController extends Controller
             "form_definition_id" => $fd->id,
             "sections" => Review::createSections($fd)
         ];
-
-        return view('new-review', [
+        $json_data = json_encode($review, JSON_PRETTY_PRINT);
+        file_put_contents('mock-new-review.json', $json_data);
+        return [
             'slug' => $slugs[$id_form],
             'id_type_review' => $id_form,
             'review' => $review
-        ]);
-
+        ];
     }
 
 
@@ -89,10 +89,11 @@ class ReviewController extends Controller
     /**
      * Saves a review
      * @param int $id_form
-     * @return array
+     * @return string
      */
     public function save(int $id_form) {
         $id_author = 1;
+
         if (Auth::user()) {
             $id_author = Auth::user()->id;
         }
@@ -103,91 +104,47 @@ class ReviewController extends Controller
             'state' => 0
         ]);
 
-        $picture = Request::file('picture');
-
         if (Request::hasFile('picture')) {
+            $picture = Request::file('picture');
             $name = 'cover' . '.' . $picture->extension();
             $picture->move(public_path() . '/upload/'. $review_created->id . '/', $name);
             $review_created->picture = $review_created->id . '/' . $name;
             $review_created->save();
         }
 
-        $sections = $this->formToSections(Request::except(['_token', 'picture']));
+        $sections = Request::input('sections');
 
-        foreach ($sections as $sId => $section) {
+        foreach ($sections as $section) {
             $section_created = Section::create([
-                "section_definition_id" => $section->sectionDefinitionId,
+                "section_definition_id" => $section['section_definition_id'],
                 "review_id" => $review_created->id
             ]);
 
-            foreach ($section->criteria as $cId => $criterion) {
+            foreach ($section['criteria'] as $criterion) {
                 $criterion_created = Criterion::create([
-                    "criterion_definition_id" => $criterion->criterionDefinitionId,
+                    "criterion_definition_id" => $criterion['criterion_definition_id'],
                     'section_id' => $section_created->id,
-                    "score" => $criterion->score,
-                    "note" => $criterion->note
+                    "score" => $criterion['score'],
+                    "note" => $criterion['note']
                 ]);
 
-                if ($criterion->files) {
-                    /* @var UploadedFile $file The uploaded file */
-                    foreach ($criterion->files as $index => $file) {
-                        $name = 'file-criterion-' . $criterion_created->id . '-' . $index . '.' . $file->extension();
-                        $path = $review_created->id . '/' . $section_created->id . '/';
-                        $file->move(public_path() . '/upload/'. $path, $name);
-
-                        Picture::create([
-                            'criterion_id' => $criterion_created->id,
-                            'path' => $path . $name
-                        ]);
-                    }
-                }
+                // if ($criterion['files']) {
+                //     /* @var UploadedFile $file The uploaded file */
+                //     foreach ($criterion['files'] as $index => $file) {
+                //         $name = 'file-criterion-' . $criterion_created->id . '-' . $index . '.' . $file->extension();
+                //         $path = $review_created->id . '/' . $section_created->id . '/';
+                //         $file->move(public_path() . '/upload/'. $path, $name);
+                //
+                //         Picture::create([
+                //             'criterion_id' => $criterion_created->id,
+                //             'path' => $path . $name
+                //         ]);
+                //     }
+                // }
             }
         }
 
-        return redirect()->to('/api/reviews/' . $review_created->id);
-    }
-
-    private function formToSections($input) {
-        // format des noms : <name>-<criterion_definition_id>-<section_definition_id>-<form_definition_id>
-
-        $sections = [];
-
-        foreach ($input as $name => $value) {
-            $parts = explode('-', $name);
-
-            // [0]: name
-            // [1]: criterion definition id
-            // [2]: section definition id
-            // [3]: form definition id
-
-            // Si la section existe...
-            if (isset($sections[$parts[2]])) {
-                // on check si le crière existe...
-                if (isset($sections[$parts[2]]->criteria[$parts[1]])) {
-                    // on update la valeur simplement
-                    $sections[$parts[2]]->criteria[$parts[1]]->{$parts[0]} = $value;
-                }
-                // sinon, on le créé
-                else {
-                    $new_criterion = (object) array("criterionDefinitionId" => $parts[1], "score" => null, "note" => null, "files" => null);
-                    $new_criterion->{$parts[0]} = $value;
-                    $sections[$parts[2]]->criteria = array_add($sections[$parts[2]]->criteria, $parts[1], $new_criterion);
-                }
-            }
-            // On n'a pas déjà créé cette section, on le fait et on rajoute le premier criterion
-            else {
-                $new_section = (object) array(
-                    "sectionDefinitionId" => $parts[2],
-                    "criteria" => [
-                        $parts[1] => (object) array("criterionDefinitionId" => $parts[1], "score" => null, "note" => null, "files" => null)
-                    ]
-                );
-
-                $new_section->criteria[$parts[1]]->{$parts[0]} = $value;
-                $sections = array_add($sections, $parts[2], $new_section);
-            }
-        }
-        return $sections;
+        return response('true', 200);
     }
 
     /**

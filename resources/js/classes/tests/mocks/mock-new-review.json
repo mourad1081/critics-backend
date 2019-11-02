@@ -1,0 +1,710 @@
+{
+    "title": "Critique gastronomique",
+    "form_definition_id": 1,
+    "sections": [
+        {
+            "title": "Accueil t\u00e9l\u00e9phonique",
+            "average": 0,
+            "priority": 0,
+            "section_definition_id": 1,
+            "criteria": [
+                {
+                    "title": "Accueil, pr\u00e9sentation",
+                    "criterion_definition_id": 1,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "\u00c9coute du besoin client",
+                    "criterion_definition_id": 2,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Proposition de la table",
+                    "criterion_definition_id": 4,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9-vente de la suggestion (lunch)",
+                    "criterion_definition_id": 5,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Confirmation (voir si SMS r\u00e9aliste)",
+                    "criterion_definition_id": 25,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Cl\u00f4ture",
+                    "criterion_definition_id": 26,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Accueil entr\u00e9e",
+            "average": 0,
+            "priority": 1,
+            "section_definition_id": 31,
+            "criteria": [
+                {
+                    "title": "Accessibilit\u00e9 \/ Propret\u00e9 \/ fleurs",
+                    "criterion_definition_id": 46,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Reconnaissance du client",
+                    "criterion_definition_id": 34,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Salut du client",
+                    "criterion_definition_id": 35,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9sentation g\u00e9n\u00e9rale des personnes en salle",
+                    "criterion_definition_id": 36,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Propret\u00e9 de la salle",
+                    "criterion_definition_id": 37,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Vestiaire",
+                    "criterion_definition_id": 38,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "La table",
+            "average": 0,
+            "priority": 2,
+            "section_definition_id": 3,
+            "criteria": [
+                {
+                    "title": "Pr\u00e9sentation de la table \/ carte",
+                    "criterion_definition_id": 39,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Vente de l'ap\u00e9ro",
+                    "criterion_definition_id": 40,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Conseil Carte\/ carte vins",
+                    "criterion_definition_id": 41,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Vente (Tableau des Suggestions)",
+                    "criterion_definition_id": 42,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Prise de commande",
+                    "criterion_definition_id": 43,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Sel \/ poivre\/ pain \/ beurre \/ huile d'olives",
+                    "criterion_definition_id": 57,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Propret\u00e9 des couverts dress\u00e9s",
+                    "criterion_definition_id": 45,
+                    "score": null,
+                    "priority": 6,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Menu",
+            "average": 0,
+            "priority": 3,
+            "section_definition_id": 2,
+            "criteria": [
+                {
+                    "title": "Proposition des plats",
+                    "criterion_definition_id": 3,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Connaissance de la carte",
+                    "criterion_definition_id": 6,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Connaissance de la composition des plats",
+                    "criterion_definition_id": 59,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Connaissance des suggestions",
+                    "criterion_definition_id": 60,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "R\u00e9actions par rapport \u00e0 la disponibilit\u00e9",
+                    "criterion_definition_id": 61,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Vin",
+            "average": 0,
+            "priority": 4,
+            "section_definition_id": 5,
+            "criteria": [
+                {
+                    "title": "Connaissance de la carte",
+                    "criterion_definition_id": 74,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9sentation des suggestions",
+                    "criterion_definition_id": 75,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Conseils\/ ad\u00e9quation aux plats choisis",
+                    "criterion_definition_id": 76,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Les sanitaires",
+            "average": 0,
+            "priority": 5,
+            "section_definition_id": 4,
+            "criteria": [
+                {
+                    "title": "Propret\u00e9 des WC",
+                    "criterion_definition_id": 77,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Disponibilit\u00e9 papier WC",
+                    "criterion_definition_id": 78,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Disponibilit\u00e9 savons",
+                    "criterion_definition_id": 79,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Moyen de s\u00e9chage",
+                    "criterion_definition_id": 80,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Ambiance olfactive",
+                    "criterion_definition_id": 81,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Le service \u00e0 table",
+            "average": 0,
+            "priority": 6,
+            "section_definition_id": 36,
+            "criteria": [
+                {
+                    "title": "Temps d'attente (max 10' lunch \/ 20' soir)",
+                    "criterion_definition_id": 82,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Dressage (selon commande)",
+                    "criterion_definition_id": 83,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Utilisation d'une assiette pour dressage couverts",
+                    "criterion_definition_id": 84,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "D\u00e9dressage de l'ap\u00e9ro",
+                    "criterion_definition_id": 85,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Service des entr\u00e9es",
+                    "criterion_definition_id": 86,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "D\u00e9dressage des entr\u00e9es",
+                    "criterion_definition_id": 87,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Service des plats",
+                    "criterion_definition_id": 88,
+                    "score": null,
+                    "priority": 6,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Simultan\u00e9it\u00e9",
+                    "criterion_definition_id": 89,
+                    "score": null,
+                    "priority": 7,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "R\u00e9ponses aux questions",
+                    "criterion_definition_id": 90,
+                    "score": null,
+                    "priority": 8,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "L'assiette",
+            "average": 0,
+            "priority": 7,
+            "section_definition_id": 6,
+            "criteria": [
+                {
+                    "title": "Chaleur des mets",
+                    "criterion_definition_id": 91,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Coh\u00e9rence des mets",
+                    "criterion_definition_id": 92,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Ad\u00e9quation promesse du menu",
+                    "criterion_definition_id": 93,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Ad\u00e9quation quantit\u00e9\/prix",
+                    "criterion_definition_id": 94,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Ad\u00e9quation qualit\u00e9\/prix",
+                    "criterion_definition_id": 95,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9sentation et dressage de l'assiette",
+                    "criterion_definition_id": 96,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Ad\u00e9quation go\u00fbt et saveurs",
+                    "criterion_definition_id": 97,
+                    "score": null,
+                    "priority": 6,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9sentation des textures",
+                    "criterion_definition_id": 98,
+                    "score": null,
+                    "priority": 7,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "R\u00e9action aux questions \/ signes d'empathie",
+                    "criterion_definition_id": 99,
+                    "score": null,
+                    "priority": 8,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "R\u00e9action aux probl\u00e8mes",
+                    "criterion_definition_id": 100,
+                    "score": null,
+                    "priority": 9,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Fromages\/desserts",
+            "average": 0,
+            "priority": 8,
+            "section_definition_id": 33,
+            "criteria": [
+                {
+                    "title": "D\u00e9dressage des plats",
+                    "criterion_definition_id": 101,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9sentation de la carte",
+                    "criterion_definition_id": 102,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Proposition des fromages\/desserts",
+                    "criterion_definition_id": 103,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Connaissance de la carte",
+                    "criterion_definition_id": 104,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Vente des suggestions",
+                    "criterion_definition_id": 105,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Proposition du caf\u00e9\/th\u00e9 ",
+                    "criterion_definition_id": 106,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Connaissance des suggestions th\u00e9s",
+                    "criterion_definition_id": 107,
+                    "score": null,
+                    "priority": 6,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Cl\u00f4ture de la table",
+            "average": 0,
+            "priority": 9,
+            "section_definition_id": 34,
+            "criteria": [
+                {
+                    "title": "\u00c9valuation de la soir\u00e9e",
+                    "criterion_definition_id": 108,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "R\u00e9action aux critiques",
+                    "criterion_definition_id": 109,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Sens de l'empathie",
+                    "criterion_definition_id": 110,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Politesse",
+                    "criterion_definition_id": 111,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Pr\u00e9sentation de l'addition",
+                    "criterion_definition_id": 112,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Proposition de commande d'un taxi (en soir\u00e9e)",
+                    "criterion_definition_id": 113,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Remerciement du client",
+                    "criterion_definition_id": 114,
+                    "score": null,
+                    "priority": 6,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Raccompagnement du client",
+                    "criterion_definition_id": 115,
+                    "score": null,
+                    "priority": 7,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Attitude commerciale",
+            "average": 0,
+            "priority": 10,
+            "section_definition_id": 35,
+            "criteria": [
+                {
+                    "title": "Notion de la rotation des tables",
+                    "criterion_definition_id": 116,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Gestion de la terrasse",
+                    "criterion_definition_id": 117,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "D\u00e9placement dans la salle",
+                    "criterion_definition_id": 118,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Regards port\u00e9s sur la salle",
+                    "criterion_definition_id": 119,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        },
+        {
+            "title": "Hygi\u00e8ne",
+            "average": 0,
+            "priority": 11,
+            "section_definition_id": 32,
+            "criteria": [
+                {
+                    "title": "Nettoyage des tables",
+                    "criterion_definition_id": 21,
+                    "score": null,
+                    "priority": 0,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "D\u00e9coupe du pain",
+                    "criterion_definition_id": 120,
+                    "score": null,
+                    "priority": 1,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "D\u00e9barrassage des verres vides",
+                    "criterion_definition_id": 121,
+                    "score": null,
+                    "priority": 2,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Remplissage des verres vides",
+                    "criterion_definition_id": 122,
+                    "score": null,
+                    "priority": 3,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Efficacit\u00e9 lors des d\u00e9placement en salle",
+                    "criterion_definition_id": 123,
+                    "score": null,
+                    "priority": 4,
+                    "score_max": "10",
+                    "note": null
+                },
+                {
+                    "title": "Utilisation des liteaux ",
+                    "criterion_definition_id": 124,
+                    "score": null,
+                    "priority": 5,
+                    "score_max": "10",
+                    "note": null
+                }
+            ]
+        }
+    ]
+}

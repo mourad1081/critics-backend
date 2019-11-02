@@ -40,6 +40,7 @@ class Review extends Model
             $s[] = [
                 "title" => $sd->title,
                 "average" => 0,
+                "priority" => $sd->priority,
                 "section_definition_id" => $sd->id,
                 "criteria" => Criterion::createCriteria($sd)
             ];

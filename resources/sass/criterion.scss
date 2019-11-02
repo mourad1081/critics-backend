@@ -1,0 +1,54 @@
+.criterion {
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px -5px grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: solid 1px #eee;
+
+    .criterion-title {
+        padding-bottom: 15px;
+    }
+
+    .icon-wrapper {
+        position: relative;
+        padding: 0 30px;
+
+        .anticon {
+            position: absolute;
+            top: -2px;
+            width: 16px;
+            height: 16px;
+            line-height: 1;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.25);
+
+            &:first-child {
+                left: 0;
+            }
+
+            &:last-child {
+                right: 0;
+            }
+        }
+    }
+
+
+}
+
+
+.anticon {
+    vertical-align: unset;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-left {
+    &::before {
+        width: 0;
+    }
+
+    &::after {
+        border-top-color: lightgrey;
+    }
+}

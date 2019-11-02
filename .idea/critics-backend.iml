@@ -100,5 +100,6 @@
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="Chart" level="application" />
+    <orderEntry type="library" name="@types/jest" level="application" />
   </component>
 </module>
